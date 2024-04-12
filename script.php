@@ -3,8 +3,17 @@
     var_dump($parola);
 
     $paragraph = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ad nemo nobis animi expedita vel, repellat perferendis placeat quisquam consequatur.";
-?>
 
+
+    $censored_word = $_GET["word2"];
+    var_dump($censored_word);
+
+    if(str_contains($censored_word, 'ciao')){
+        echo "****";
+    } else {
+        echo "$censored_word non è la parola da censurare";
+    };
+?>
 
 <!DOCTYPE html>
 <html lang="en">
